@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    
+
+   
+
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+        }
+
+        
+        .square-1 {
+            background-color: red;
+        }
+
+        .square-2 {
+            background-color: blue;
+        }
+
+        .square-3 {
+            background-color: green;
+        }
+
+        .square-4 {
+            background-color: orange;
+        }
+
+        .square-5 {
+            background-color: transparent;
+            background-image: url('https://www.w3schools.com/images/w3schools_green.jpg');
+            background-size: cover;
+        }
+    </style>
+    <title>Kolorowe kwadraty</title>
+</head>
+<body>
+
+<h1>Kolorowe kwadraty</h1>
+
+<div class="container">
+    <div class="container">
+        <div class="square square-1"></div>
+        <div class="square square-2"></div>
+        <div class="square square-3"></div>
+        <div class="square square-4"></div>
+        <div class="square square-5"></div>
+    </div>
+    
+    </body>
+    </html>
