@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <title>Lista Produktów</title>
+</head>
+<body>
+
+<h2>Lista produktów</h2>
+
+<table>
+    <tr>
+        <th>Nr.</th>
+        <th>Nazwa produktu</th>
+        <th>Cena produktu</th>
+        <th>Ilość sztuk</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Chleb</td>
+        <td>4.50 PLN</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Mleko</td>
+        <td>3.20 PLN</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Ser Żółty</td>
+        <td>12.99 PLN</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Masło</td>
+        <td>6.75 PLN</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Jajka (10 szt.)</td>
+        <td>9.30 PLN</td>
+        <td>30</td>
+    </tr>
+</table>
+
+</body>
+</html>
