@@ -1,0 +1,221 @@
+/* Podstawowe stylowanie strony */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% wysokości widoku */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background-color: #F5F5DC;
+    color: #333333;
+    
+}
+
+/* Stylizacja dla całego nagłówka */
+.main-header {
+    width: 100%;
+  
+}
+
+/* Flexbox dla logo i nawigacji */
+.header-content {
+    width:100vw;
+    display: flex;
+    align-items: left;
+    margin-left: 32px;
+    justify-content: space-between; /* Przesuwa navbar do prawej, logo pozostaje po lewej */
+}
+
+/* Stylizacja logo */
+.logo img {
+    height: 50px; /* Dostosuj rozmiar logo */
+}
+
+
+
+/* Stylizacja nawigacji */
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* Odstępy między linkami */
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    color: #D2B48C; /* Kolor linków po najechaniu */
+}
+
+
+    
+  
+    .parallax-section {
+        background-image: url('george-kendall-gl7lKZ_zC-I-unsplash.jpg');       
+         background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        background-position: center;
+        height: 800px; /* Wysokość sekcji paralaksy */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+        position: relative;
+    }
+    
+    .parallax-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4); /* Efekt przyciemnienia obrazu */
+        z-index: 1;
+    }
+    
+    .parallax-content {
+        position: relative;
+        z-index: 2; /* Tekst nad warstwą przyciemnienia */
+    }
+    
+    /* Stylizacja głównej treści */
+    main {
+        padding: 20px;
+        flex: 1;
+        margin-bottom: 36px;
+
+
+    }
+    
+    /* Dodatkowa responsywność */
+    @media (max-width: 768px) {
+        .parallax-section {
+            background-attachment: scroll; /* Wyłączenie efektu paralaksy na mobilnych */
+        }
+    }
+/* Stylizacja responsywna */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start; /* Ustawia logo i nawigację w kolumnie na mniejszych ekranach */
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+/* Stylizacja nagłówka */
+.header-container {
+    display: flex;
+    align-items: center; /* Wyrównanie pionowe */
+    justify-content: space-between; /* Równomierne rozmieszczenie logo i nawigacji */
+    width: 100%;
+    padding: 20px; /* Wewnętrzne wypełnienie */
+    background-color: #324001; /* Kolor tła nagłówka */
+    box-sizing: border-box;
+}
+
+/* Stylizacja logo */
+.logo {
+    flex: 1; /* Umożliwia wyrównanie logo do lewej */
+    text-align: left;
+    color: white;
+    font-size: 24px;
+}
+
+/* Stylizacja nawigacji */
+.navbar {
+    display: flex;
+    gap: 15px; /* Przestrzeń między linkami */
+    flex: 1;
+    justify-content: center; /* Wyrównanie nawigacji do środka */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    background-color: #F5F5DC;
+}
+
+nav ul li a {
+    color: #F5F5DC;
+    text-decoration: none;
+}
+
+.footer {
+    position: relative;
+    font-size: 75%;
+    color: #D2B48C;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 36px;
+    min-width: 100%;
+}
+
+
+.header {
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* Stylowanie sekcji galerii */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.gallery img {
+    width: calc(auto);
+    height: 300px;
+}
+
+/* Formularz kontaktowy */
+.contact-form {
+    display: flex;
+    flex-direction: column;}
+
+.contact-form label, .contact-form input, .contact-form select, .contact-form textarea {
+    margin-bottom: 10px;
+}
+
+
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+    
