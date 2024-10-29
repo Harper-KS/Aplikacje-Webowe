@@ -14,7 +14,7 @@ body {
 
 /* Stylizacja dla całego nagłówka */
 .main-header {
-    width: 100%;
+    margin-left: 32px;
   
 }
 
@@ -23,8 +23,8 @@ body {
     width:100vw;
     display: flex;
     align-items: left;
-    margin-left: 32px;
-    justify-content: space-between; /* Przesuwa navbar do prawej, logo pozostaje po lewej */
+    right: 64px;
+    padding-right: 32px;
 }
 
 /* Stylizacja logo */
@@ -96,12 +96,12 @@ body {
 
     }
     
-    /* Dodatkowa responsywność */
+    /* Dodatkowa responsywność 
     @media (max-width: 768px) {
         .parallax-section {
-            background-attachment: scroll; /* Wyłączenie efektu paralaksy na mobilnych */
+            background-attachment: scroll;  Wyłączenie efektu paralaksy na mobilnych 
         }
-    }
+    }*/
 /* Stylizacja responsywna */
 @media (max-width: 768px) {
     .header-content {
@@ -125,7 +125,8 @@ body {
     width: 100%;
     padding: 20px; /* Wewnętrzne wypełnienie */
     background-color: #324001; /* Kolor tła nagłówka */
-    box-sizing: border-box;
+    box-sizing: content-box;
+    margin-left: 32px;
 }
 
 /* Stylizacja logo */
@@ -181,6 +182,7 @@ nav ul li a {
     color: white;
     text-align: center;
     width: 100%;
+    padding-right: 32px;
 }
 
 
