@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header"></div> 
+
+    <main class="content">
+        <h2>Kontakt</h2>
+        <form class="contact-form">
+            <label for="email">E-Mail:</label>
+            <input type="text" id="email" name="email" placeholder="Twój email" required>
+
+            <label for="subject">Temat wiadomości:</label>
+            <select id="subject" name="subject">
+                <option value="info">Wiem dokąd tupta nocą jeż</option>
+                <option value="support">Chcę wiedziec dokąd tupta nocą jeż</option>
+                <option value="feedback">Jestem jeżem</option>
+            </select>
+
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" name="message" placeholder="Twoja wiadomość" required></textarea>
+
+            <input type="submit" value="Wyślij">
+        </form>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="scripts/loadContent.js"></script>
+</body>
+</html>
